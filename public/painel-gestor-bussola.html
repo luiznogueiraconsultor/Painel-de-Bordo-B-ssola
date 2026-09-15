@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Bordo do Gestor | Bússola Gestão Automotiva</title>
+  <meta name="description" content="Cockpit Operacional e Painel de Bordo do Gestor: Produtividade do Pátio, CPH Real, Margem Comercial e Refugo Operacional." />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #102B3F;
+    }
+    .cockpit-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="cockpit-container">
+    <iframe
+      id="cockpit-frame"
+      src="https://ais-pre-yq7nswyhcki55ousqfvtww-830433946131.us-east1.run.app"
+      title="Painel de Bordo do Gestor - Bússola Gestão Automotiva"
+      allow="clipboard-write; fullscreen"
+      loading="eager"
+    ></iframe>
+  </div>
+  <script>
+    // Pass query parameters if present (e.g. ?dados=...)
+    if (window.location.search) {
+      const frame = document.getElementById('cockpit-frame');
+      if (frame) {
+        frame.src = 'https://ais-pre-yq7nswyhcki55ousqfvtww-830433946131.us-east1.run.app' + window.location.search;
+      }
+    }
+  </script>
+</body>
+</html>

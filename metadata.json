@@ -1,0 +1,6 @@
+{
+  "name": "Painel de Bordo do Gestor",
+  "description": "Cockpit Operacional e Painel de Bordo do Gestor por Bússola Gestão Automotiva: Produtividade do Pátio, CPH Real & Absorção, Margem Comercial e Refugo Operacional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
